@@ -1,0 +1,263 @@
+
+:root{
+--brand-color: #2196F3;
+--second-brand-color: #FFFFFF;
+--main-color: #212121;
+--secondary-color: #757575;
+--grey-rgba-color: rgba(255, 255, 255, 0.6);
+}
+
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--main-color);
+    letter-spacing: 0.03em;
+    font-size: 14px;  
+}
+
+/* logo style */
+.accent-blue {
+    color: var(--brand-color);
+}
+.accent-black {
+    color: var(--main-color);
+}
+
+.logo{
+font-family: 'Raleway', sans-serif;
+font-size: 26px;
+line-height: 1.19;
+text-decoration: none;
+}
+
+.logo:hover, .logo:focus{
+
+}
+
+
+         /* ---------------- STYLE index.html -------------------- */
+
+/* ---Heder style--- */
+
+.item .current {
+    color: var(--brand-color);
+    
+}
+
+.header-page .header-contact,
+.header-page .header-nav{
+list-style: none;
+}
+
+.navigation-link{
+    color: inherit;
+    font-weight: 500;
+    line-height: 1.14;
+    text-decoration: none;
+    letter-spacing: 0.02em;    
+}
+
+ .navigation-link:hover,
+ .navigation-link:focus{
+    color: var(--brand-color);
+}
+
+.contact-link{
+    color: var(--secondary-color);
+    text-decoration: none; 
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em; 
+}
+
+.contact-link:hover,
+.contact-link:focus{
+    color: var(--brand-color);
+}
+
+/* ---HERO STYLE--- */
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero-btn{
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--second-brand-color);
+    cursor: pointer; 
+    background-color: var(--brand-color);
+}
+
+.hero .hero-btn:hover{
+ background-color: var(--brand-color);
+}
+
+
+.advantage-list{
+    list-style: none;
+}
+
+.advantage-title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+.advantage-subtitle {
+    line-height: 1.71;
+    color: var(--secondary-color);
+}
+
+
+/* ---ABOUT STYLE--- */
+.about-title{
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+
+}
+
+.about-list{
+    list-style: none;
+}
+
+/* ---TEAM STYLE--- */
+.team-list{
+    list-style: none;
+}
+
+.team-title{
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.team-subtitle{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+.team-text {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+/* ---FOOTER STYLE--- */
+
+.footer{
+    background-color: #2F303A;
+}
+
+.accent-white{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--second-brand-color);
+}
+
+.footer-address{
+    font-style: normal;
+}
+
+.footer-contact-link{
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--grey-rgba-color);
+    text-decoration: none;
+}
+
+.footer-contact{
+    list-style: none;
+}
+
+.footer-contact .footer-contact-link:hover,
+.footer-contact .footer-contact-link:focus{
+    color: var(--brand-color); 
+}
+
+.location{
+    line-height: 1.71;
+    color: var(--second-brand-color);
+    text-decoration: none;
+}
+
+/* .location:hover, .location:focus{
+
+} */
+
+
+
+/* ---------------- STYLE PORTFOLIO.html -------------------- */
+
+
+
+.filter-list .filter-btn:hover,
+.filter-list .filter-btn:focus{
+   color: var(--second-brand-color);
+   background-color: var(--brand-color);
+   cursor: pointer;
+}
+
+.list{
+   list-style: none;
+}
+
+.portfolio-link{
+    text-decoration: none;
+}
+
+.filter-btn{
+font-family: inherit; 
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+color: var(--main-color);
+}
+
+.item .current-btn{
+    background-color: var(--brand-color);
+    color: var(--second-brand-color);
+}
+
+/* ---SECTION WORK STYLE--- */
+
+.portfolio-title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-color);
+}
+
+.portfolio-subtitle {
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--secondary-color);
+}
+
+
+

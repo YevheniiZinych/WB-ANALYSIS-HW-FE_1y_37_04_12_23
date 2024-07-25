@@ -44,6 +44,7 @@ body {
 .header {
   height: 80px;
   width: 1600px;
+  margin: 0 auto;
 }
 
 .header-flex {
@@ -96,7 +97,6 @@ body {
 .header-contact-list {
   display: flex;
   margin-left: auto;
-  margin-right: 200px;
 }
 
 .header-contact-item {
@@ -191,14 +191,16 @@ body {
 
 /* Advantages */
 
+.advantages {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 94px;
+}
+
 .flex-advantages {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.advantages {
-  margin-bottom: 94px;
 }
 
 .advantage-list {
@@ -257,6 +259,8 @@ body {
 
 /* ---ABOUT STYLE--- */
 .about {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 94px;
 }
 .about-title {
@@ -446,7 +450,7 @@ body {
 /* ---------------- STYLE PORTFOLIO.html -------------------- */
 
 .portfolio {
-  margin: 94px 0 94px;
+  margin: 94px auto 94px;
 }
 
 .filter-list {

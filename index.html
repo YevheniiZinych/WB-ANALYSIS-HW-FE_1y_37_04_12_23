@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&family=Square+Peg&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -19,7 +23,8 @@
     <header class="header">
       <div class="container header-flex">
         <a href="index.html" class="header-logo">
-          <span class="accent-blue">Web</span><span class="accent-black">Studio</span></a
+          <span class="accent-blue">Web</span
+          ><span class="accent-black">Studio</span></a
         >
         <nav class="header-nav">
           <ul class="header-nav-list">
@@ -47,7 +52,9 @@
             <svg class="contact-icon" width="10" height="16">
               <use href="./images/sprite.svg#smartphone"></use>
             </svg>
-            <a href="tel:+380961111111" class="contact-link"> +38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="contact-link">
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -71,29 +78,29 @@
             <li class="advantage-item">
               <h3 class="advantage-title">Внимание к деталям</h3>
               <p class="advantage-subtitle">
-                Идейные соображения, а также начало повседневной работы по формированию
-                позиции.
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
               </p>
             </li>
             <li class="advantage-item">
               <h3 class="advantage-title">Пунктуальность</h3>
               <p class="advantage-subtitle">
-                Задача организации, в особенности же рамки и место обучения кадров влечет
-                за собой.
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
               </p>
             </li>
             <li class="advantage-item">
               <h3 class="advantage-title">Планирование</h3>
               <p class="advantage-subtitle">
-                Равным образом консультация с широким активом в значительной степени
-                обуславливает.
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
               </p>
             </li>
             <li class="advantage-item">
               <h3 class="advantage-title">Современные технологии</h3>
               <p class="advantage-subtitle">
-                Значимость этих проблем настолько очевидна, что реализация плановых
-                заданий.
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
               </p>
             </li>
           </ul>
@@ -425,6 +432,25 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <form action="" class="footer-subscribe-form">
+            <label class="footer-subscribe-label">
+              <span>Підпишіться на розсилку</span>
+              <input
+                class="footer-subscribe-input"
+                type="email"
+                required
+                placeholder="E-mail"
+              />
+            </label>
+            <div class="subscribe-btn-wrapp">
+              <button class="footer-subscribe-btn">Підписатися</button>
+              <svg class="footer-subscribe-icon">
+                <use href="./images/sprite.svg#send-icon"></use>
+              </svg>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -439,15 +465,46 @@
         </button>
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form">
-          <label class="modal-form-label"
-            ><input type="text" required class="modal-form-input" /></label
-          ><label class="modal-form-label"
-            ><input type="number" required class="modal-form-input" /></label
-          ><label class="modal-form-label"
-            ><input type="email" required class="modal-form-input" /></label
-          ><label class="modal-form-label"
-            ><input type="textarea" required class="modal-form-input"
-          /></label>
+          <label class="modal-form-label">
+            <span>Ім'я</span>
+            <div class="form-input-wrapp">
+              <input type="text" required class="modal-form-input" />
+              <svg class="form-input-icon">
+                <use href="./images/sprite.svg#name-icon"></use>
+              </svg>
+            </div> </label
+          ><label class="modal-form-label">
+            <span>Телефон</span>
+            <div class="form-input-wrapp">
+              <input min="0" type="number" required class="modal-form-input" />
+              <svg class="form-input-icon">
+                <use href="./images/sprite.svg#phone-form-icon"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="modal-form-label">
+            <span>Пошта</span>
+            <div class="form-input-wrapp">
+              <input type="email" required class="modal-form-input" />
+              <svg class="form-input-icon">
+                <use href="./images/sprite.svg#email-form-icon"></use>
+              </svg>
+            </div> </label
+          ><label class="modal-form-label">
+            <span>Коментар</span>
+            <textarea
+              class="modal-form-textarea"
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
+          <label class="modal-form-label-checkbox">
+            <input type="checkbox" required class="modal-form-checkbox" />
+            <span
+              >Погоджуюся з розсилкою та приймаю
+              <a href="#!">Умови договору</a></span
+            >
+          </label>
+          <button type="submit" class="modal-form-btn">Відправити</button>
         </form>
       </div>
     </div>

@@ -1,0 +1,50 @@
+.clients {
+  margin: 0 auto 94px;
+
+  text-align: center;
+}
+.clients-title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  font-weight: 700;
+  line-height: calc(42 / 36);
+}
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 30px;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid rgb(175, 177, 184);
+
+  transition: border-color $duration $cubic;
+}
+
+.clients-item:is(:hover, :focus),
+.clients-item:is(:hover, :focus) .clients-link-icon {
+  border-color: $brand-color;
+  fill: $brand-color;
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.clients-link-icon {
+  width: 106px;
+  height: 60px;
+
+  fill: $secondary-color;
+
+  transition: fill $duration $cubic;
+}

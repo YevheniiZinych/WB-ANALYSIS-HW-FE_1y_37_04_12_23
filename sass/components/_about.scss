@@ -1,0 +1,44 @@
+.about {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 94px;
+}
+.about-title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.about-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-list-img {
+  width: 370px;
+}
+
+.about-item-wrapp {
+  position: relative;
+}
+
+.about-img-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+
+  color: white;
+
+  height: 70px;
+  width: 100%;
+  background-color: #2f303acc;
+}

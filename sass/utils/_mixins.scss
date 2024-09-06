@@ -1,0 +1,9 @@
+@mixin border($size, $type, $color) {
+  border: $size $type $color;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

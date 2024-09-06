@@ -1,11 +1,12 @@
 .header {
-  height: 80px;
-  width: 1600px;
+  height: 60px;
+  // width: 1600px;
   margin: 0 auto;
 
   &--flex {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   &__logo {
@@ -24,6 +25,7 @@
 }
 
 .header-nav {
+  display: none;
   margin-left: 93px;
 
   &__list {
@@ -48,32 +50,13 @@
     transition: color $duration $cubic;
 
     &.header-nav__link--current::after {
-      content: ' ';
-      position: absolute;
-      display: block;
-
-      bottom: 0;
-
-      width: 100%;
-      height: 4px;
-
-      border-radius: 2px;
+      @extend %pseudoUnderlineNav;
 
       background-color: $brand-color;
     }
 
     &::before {
-      content: '';
-
-      position: absolute;
-      display: block;
-
-      bottom: 0;
-
-      width: 100%;
-      height: 4px;
-
-      border-radius: 2px;
+      @extend %pseudoUnderlineNav;
 
       background-color: $brand-color;
       transform: scaleX(0);
@@ -93,7 +76,7 @@
 }
 
 .header-contact {
-  display: flex;
+  display: none;
   margin-left: auto;
 
   .header-contact__item {
@@ -134,4 +117,11 @@
   .header-contact__item:is(:hover, :focus) .header-contact__icon {
     fill: $brand-color;
   }
+}
+
+.header-menu__icon {
+  height: 16px;
+  width: 24px;
+  fill: black;
+  stroke: black;
 }

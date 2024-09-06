@@ -22,7 +22,7 @@
   width: 170px;
   height: 92px;
 
-  border: 1px solid rgb(175, 177, 184);
+  @include border(1px, solid, rgb(175, 177, 184));
 
   transition: border-color $duration $cubic;
 }

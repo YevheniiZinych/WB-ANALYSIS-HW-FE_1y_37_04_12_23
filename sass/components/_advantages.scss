@@ -5,15 +5,11 @@
 }
 
 .flex-advantages {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexCenter();
 }
 
 .advantage-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexCenter();
 }
 
 .advantage-item:not(:last-child) {

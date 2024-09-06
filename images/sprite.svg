@@ -64,6 +64,8 @@
 <symbol id="send-icon" viewBox="0 0 32 32">
 <path d="M32 0l-32 18 10.213 3.787 15.787-14.787-12 16.173v8.827l5.733-6.693 7.267 2.693 5-28z"></path>
 </symbol>
-
+<symbol id="navigation_menu" viewBox="0 0 48 32">
+<path d="M0 5.333v-5.333h48v5.333h-48zM0 18.666h48v-5.333h-48v5.333zM0 32h48v-5.333h-48v5.333z"></path>
+</symbol>
 </defs>
 </svg>

@@ -1,8 +1,11 @@
 @import './utils/variables';
 @import './utils/normalize';
 @import './components/base';
+@import './utils/media';
 @import './utils/container';
 @import './utils/visually-hidden';
+@import './utils/placeholders';
+@import './utils/mixins';
 
 @import './components/about';
 @import './components/advantages';

@@ -1,6 +1,5 @@
 .header {
   height: 60px;
-  // width: 1600px;
   margin: 0 auto;
 
   &--flex {
@@ -27,6 +26,10 @@
 .header-nav {
   display: none;
   margin-left: 93px;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
 
   &__list {
     display: flex;
@@ -119,9 +122,15 @@
   }
 }
 
-.header-menu__icon {
-  height: 16px;
-  width: 24px;
-  fill: black;
-  stroke: black;
+.header-menu {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  &__icon {
+    height: 16px;
+    width: 24px;
+    fill: black;
+    stroke: black;
+  }
 }

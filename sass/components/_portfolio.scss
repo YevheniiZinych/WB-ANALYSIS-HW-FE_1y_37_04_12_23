@@ -47,17 +47,11 @@
 }
 
 .portfolio-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter();
   flex-wrap: wrap;
 
   gap: 30px;
 }
-
-// .portfolio-item:not(:nth-child(3n)) {
-//   margin-right: 30px;
-// }
 
 .portfolio-item {
   border: 1px solid rgb(238, 238, 238);
@@ -70,6 +64,14 @@
   border-right: 1px solid rgb(238, 238, 238);
 
   transition: box-shadow $duration $cubic;
+
+  @media (min-width: $tablet) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media (min-width: $tablet) {
+    flex-basis: calc((100% - 30px * 2) / 3);
+  }
 }
 
 .portfolio-item:is(:hover, :focus) {

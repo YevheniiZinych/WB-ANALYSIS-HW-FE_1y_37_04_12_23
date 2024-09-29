@@ -13,6 +13,14 @@
   line-height: calc(33 / 28);
 }
 
+.team-list {
+  @media (min-width: $tablet) {
+    @include flexCenter();
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
 .team-list-item {
   max-height: 622px;
   border-radius: 0px 0px 4px 4px;
@@ -21,6 +29,18 @@
 
   &:not(:last-child) {
     margin-bottom: 30px;
+  }
+
+  @media (min-width: $tablet) {
+    flex-basis: calc((100% - 30px) / 2);
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    flex-basis: calc((100% - 30px * 3) / 4);
   }
 }
 

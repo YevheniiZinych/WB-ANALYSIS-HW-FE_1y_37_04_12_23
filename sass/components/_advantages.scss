@@ -3,7 +3,23 @@
 }
 
 .advantage-list {
-  // @include flexCenter();
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    margin: 0;
+  }
+}
+
+.advantage-item {
+  @media (min-width: $tablet) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media (min-width: $desktop) {
+    flex-basis: calc((100% - 30px * 3) / 4);
+  }
 }
 
 .advantage-item:not(:last-child) {
@@ -50,6 +66,10 @@
   color: $main-color;
 
   text-align: center;
+
+  @media (min-width: $tablet) {
+    text-align: start;
+  }
 }
 .advantage-subtitle {
   line-height: calc(24 / 14);

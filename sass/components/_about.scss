@@ -1,6 +1,10 @@
 .about {
   display: none;
   margin: 0 auto 94px;
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
 }
 .about-title {
   margin-bottom: 50px;
